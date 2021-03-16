@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom'
 import Logo from '../assets/logo.svg'
-import LogoChicken from '../assets/logo.jpg'
 
 import { Link } from 'react-router-dom'
 

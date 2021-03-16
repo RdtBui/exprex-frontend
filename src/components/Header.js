@@ -2,7 +2,9 @@ import NavBar from './NavBar'
 
 const Header = () => {
     return (
-        <NavBar />
+        <header>
+            <NavBar />
+        </header>
     )
 }
 
