@@ -39,3 +39,33 @@
   width: 100%;
   padding: 120px 0 0;
 }
+
+.section1, .section2, .section3, .section4, .section5 {
+  height:100vh;
+  width: 100%;
+}
+
+.section1 {
+  background: rgb(159, 205, 251);
+}
+
+.section2 {
+  background: rgb(18, 51, 62);
+}
+
+.section3 {
+  background: rgb(210, 177, 147);
+}
+
+.section4 {
+  background: rgb(91, 110, 198);
+}
+
+.section5 {
+  background: rgb(156, 194, 154);
+}
+
+/************************** Animations ***********************/
+
+/* Typewriter Effect */
+
