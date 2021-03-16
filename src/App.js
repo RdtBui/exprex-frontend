@@ -24,9 +24,10 @@ function App() {
       {/* <Header /> */}
       <Router>
         <div>
-          <Header />
+
           <Route path='/' exact render={() => (
             <>
+              <Header />
               <Home />
             </>
           )} />
