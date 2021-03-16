@@ -9,15 +9,28 @@ Header {
   z-index: 4;
   transition: .2 ease-in-out;
 }
+Body {
+  font: 1.6em/1.4 "proximanova",sans-serif;
+  font-size: 1.6em;
+  line-height: 1.4;
+  font-family: "proximanova", sans-serif;
+}
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 14px 30px;
-  font-family: "gilroy",sans-serif;
+  font-family: "gilroy", sans-serif;
   font-size: 1.3rem;
-  border-radius: 100px;
+  border-radius: 100px !important;
+  white-space: nowrap;
+  color: #fff;
+  background: #11a3eb;
+}
+
+.btn.large {
+  padding: 14px 48px;
 }
 
 .container {

@@ -12,7 +12,7 @@ const Home = () => {
                         <div class="wrapper-text" >
                             <h1>We deliver...<span>typewriter effect here</span></h1>
                             <p>Power your x with on-demand deliveries</p>
-                            <a class="btn">
+                            <a class="btn large" style={{ backgroundColor: "rgb(82, 166, 251)" }}>
                                 <span>Get started </span>
                                 <img src={RightArrowIcon} width="10" height="10" />
                             </a>
