@@ -6,9 +6,9 @@ const Home = () => {
         <div class="col no-gutters position-relative" style={{ padding: '0' }}>
             <div class="flex-row flex-col no-gutters">
                 <section class="d-flex align-items-center overflow-hidden" style={{ padding: "50px 0", zIndex: "1", minHeight: "calc(100vh - 40px)" }}>
+                    {/* Section 1 */}
                     <span class="bg section1"></span>
                     <div class="container large d-flex justify-content-between align-items-center flex-row-reverse">
-                        {/* Section 1 */}
                         <div class="wrapper-text" >
                             <h1>We deliver...<span>typewriter effect here</span></h1>
                             <p>Power your x with on-demand deliveries</p>
@@ -23,23 +23,53 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-            <div class="row no-gutters">
-                <div class="section2 d-flex justify-content-center align-items-center">
-                    Section 2
-                    {/* <img alt="Restaurants" src={Restaurants} /> */}
+            <div class="flex-row no-gutters">
+                <div class="section2 d-flex justify-content-center align-items-center" style={{
+                    position: "relative",
+                    paddingTop: "125px",
+                    paddingBottom: "125px",
+                    zIndex: "2"
+                }}>
+                    {/* Section 2 */}
+                    <div class="d-flex container text-align-center align-items-center justify-content-center" style={{ marginTop: "-36vh" }}>
+                        <div class="cta-blocks text-align-center">
+                            <div class="cta-block text-align-center">
+                                <div class="cta-txt">
+                                    <h3>For couriers</h3>
+                                    <p>
+                                        <span>Join a vibrant community of independent chickens</span>
+                                    </p>
+                                </div>
+                                <a class="btn" href="#">Become a chicken</a>
+                                <div class="divider"></div>
+                            </div>
+                            {/* <div class="divider"></div> */}
+                            <div class="cta-block text-align-center">
+                                <div class="cta-txt">
+                                    <h3>For businesses</h3>
+                                    <p>
+                                        <span>Start delivering happiness to all your clients, on-demand</span>
+                                    </p>
+                                </div>
+                                <a class="btn" href="#">Contact Hitler</a>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="flex-row no-gutters">
                 <div class="section3 d-flex justify-content-center align-items-center">
                     Section 3
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="flex-row no-gutters">
                 <div class="section4 d-flex justify-content-center align-items-center">
                     Section 4
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="flex-row no-gutters">
                 <div class="section5 d-flex justify-content-center align-items-center">
                     Section 5
                 </div>
