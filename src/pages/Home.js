@@ -48,10 +48,6 @@ const Home = () => {
                                     <div class="line"></div>
                                 </div>
                             </div>
-
-
-
-
                             <div class="cta-block text-center">
                                 <div class="cta-txt">
                                     <h3 style={{ color: "#105285" }}>For businesses</h3>

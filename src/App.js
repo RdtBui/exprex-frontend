@@ -1,11 +1,11 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import $ from 'jquery'
 import Popper from 'popper.js'
 
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 import {
   BrowserRouter as Router,
@@ -21,10 +21,9 @@ import BecomeCourier from './pages/BecomeCourier';
 function App() {
   return (
     <div>
-      {/* <Header /> */}
       <Router>
         <div>
-
+          {/* Add header here */}
           <Route path='/' exact render={() => (
             <>
               <Header />
@@ -35,8 +34,8 @@ function App() {
           <Route path='/contact-us' component={ContactUs} />
           <Route path='/become-courier' component={BecomeCourier} />
         </div>
+        <Footer />
       </Router>
-      {/* <Footer /> */}
     </div>
   );
 }
