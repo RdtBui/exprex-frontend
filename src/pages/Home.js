@@ -35,20 +35,18 @@ const Home = () => {
                         <div class="cta-blocks text-align-center">
                             <div class="cta-block text-center">
                                 <div class="cta-txt">
-                                    <h3>For couriers</h3>
+                                    <h3 style={{ color: "#105285" }}>For couriers</h3>
                                     <p>
                                         <span>Join a vibrant community of independent chickens</span>
                                     </p>
                                 </div>
-                                <a class="btn" href="#" style={{
-                                    backgroundColor: "#105285"
-                                }}>Become a chicken</a>
+                                <a class="btn" href="#" style={{ backgroundColor: "#105285" }}>Become a chicken</a>
                                 < div class="divider" ></div>
                             </div>
                             {/* <div class="divider"></div> */}
                             <div class="cta-block text-center">
                                 <div class="cta-txt">
-                                    <h3>For businesses</h3>
+                                    <h3 style={{ color: "#105285" }}>For businesses</h3>
                                     <p>
                                         <span>Start delivering happiness to all your clients, on-demand</span>
                                     </p>

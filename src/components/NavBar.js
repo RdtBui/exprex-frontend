@@ -39,7 +39,7 @@ const NavBar = () => {
                         <a class="nav-link" href="/become-courier">Become a courier</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact-us">Get in touch</a>
+                        <a class="nav-link btn" href="/contact-us" style={{ backgroundColor: "#105285" }}>Get in touch</a>
                     </li>
                 </ul>
             </div>
