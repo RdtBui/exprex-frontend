@@ -43,7 +43,14 @@ const Home = () => {
                                 <a class="btn" href="#" style={{ backgroundColor: "#105285" }}>Become a chicken</a>
                                 < div class="divider" ></div>
                             </div>
-                            {/* <div class="divider"></div> */}
+
+                            {/* Rain drop effect */}
+                            <div class="lines">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+
                             <div class="cta-block text-center">
                                 <div class="cta-txt">
                                     <h3 style={{ color: "#105285" }}>For businesses</h3>
