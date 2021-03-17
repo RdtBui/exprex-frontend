@@ -24,8 +24,8 @@ const NavBar = () => {
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Business solutions
-                            </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Take a shit</a>
                             <a class="dropdown-item" href="#">Take a dump</a>
                             <div class="dropdown-divider"></div>

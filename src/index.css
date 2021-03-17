@@ -73,7 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section2 {
-  background: rgb(18, 51, 62);
+  background: #ffff;
+  /* background: rgb(18, 51, 62); */
 }
 
 .section3 {
@@ -103,14 +104,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
   padding: 100px 50px 110px;
   color: #a1a6ac;
-}
-
-.divider {
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  border-left: 1px solid skyblue;
 }
 
 .cta-txt {
@@ -154,36 +147,56 @@ body {
   margin: 0;
 }
 .wave-container {
-  background: #EEE;
+  background: #ffff;
 }
 .wave-container > svg {
   display: block;
 }
 
 /************************** Animations ***********************/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /* Typewriter Effect */
 
+
 /* Rain drop effect */
-.lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-}
 
 .line {
   position: absolute;
   width: 1px;
   height: 100%;
   top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  right: 0;
+  bottom: 0;
   overflow: hidden;
+  background: rgba(190, 190, 190, 0.1)
 }
+
 .line::after {
   content: "";
   display: block;
@@ -192,7 +205,7 @@ body {
   width: 100%;
   top: -50%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, skyblue 75%, skyblue 100%);
   -webkit-animation: drop 7s 0s infinite;
           animation: drop 7s 0s infinite;
   -webkit-animation-fill-mode: forwards;
