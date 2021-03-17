@@ -142,6 +142,24 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+/* Wave effect */
+
+html {
+  box-sizing: border-box;
+}
+*, *::before,*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+.wave-container {
+  background: #EEE;
+}
+.wave-container > svg {
+  display: block;
+}
+
 /************************** Animations ***********************/
 
 /* Typewriter Effect */
