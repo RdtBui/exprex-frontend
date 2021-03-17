@@ -23,6 +23,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
+.title {
+  padding: 0 40px;
+  font-family: "gilroy", sans-serif;
+  font-size: 2vw;
+  line-height: 1.1;
+  color: #fff;
+  transition: .3 ease-in-out;
+  white-space: nowrap;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -135,6 +145,22 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+.container-cards {
+  overflow: hidden;
+}
+
+.bounds-cards {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper-cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 50px 0;
+}
+
 /* Wave effect */
 
 html {
@@ -153,7 +179,15 @@ body {
   display: block;
 }
 
-/************************** Animations ***********************/
+a, u {
+  text-decoration: none !important;
+}
+
+
+
+/************************** Animations ************************/
+
+/* Dropdown on hover */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -245,3 +279,4 @@ body {
     top: 110%;
   }
 }
+
