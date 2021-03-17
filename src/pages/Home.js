@@ -33,25 +33,27 @@ const Home = () => {
                     {/* Section 2 */}
                     <div class="d-flex container text-align-center align-items-center justify-content-center" style={{ marginTop: "-36vh" }}>
                         <div class="cta-blocks text-align-center">
-                            <div class="cta-block text-align-center">
+                            <div class="cta-block text-center">
                                 <div class="cta-txt">
                                     <h3>For couriers</h3>
                                     <p>
                                         <span>Join a vibrant community of independent chickens</span>
                                     </p>
                                 </div>
-                                <a class="btn" href="#">Become a chicken</a>
-                                <div class="divider"></div>
+                                <a class="btn" href="#" style={{
+                                    backgroundColor: "#105285"
+                                }}>Become a chicken</a>
+                                < div class="divider" ></div>
                             </div>
                             {/* <div class="divider"></div> */}
-                            <div class="cta-block text-align-center">
+                            <div class="cta-block text-center">
                                 <div class="cta-txt">
                                     <h3>For businesses</h3>
                                     <p>
                                         <span>Start delivering happiness to all your clients, on-demand</span>
                                     </p>
                                 </div>
-                                <a class="btn" href="#">Contact Hitler</a>
+                                <a class="btn" href="#" style={{ backgroundColor: "rgb(82, 166, 251)" }}>Contact Hitler</a>
 
                             </div>
                         </div>
