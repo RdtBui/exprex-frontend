@@ -14,7 +14,7 @@ import {
 const NavBar = () => {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/"><img alt="Logo" src={Logo} width="80" height="50" /></a>
+            <a class="navbar-brand" href="/"><img alt="Logo" src={Logo} width="100" height="100" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,10 +26,10 @@ const NavBar = () => {
                             Business solutions
                             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Take a shit</a>
+                            <a class="dropdown-item" href="#">Take a dump</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Drop a deuce</a>
                         </div>
                     </li>
                     <li class="nav-item">
