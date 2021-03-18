@@ -74,7 +74,7 @@ const Home = () => {
                 <div class="section3 d-flex justify-content-center align-items-center px-5">
                     <div class="row p-5">
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(156, 194, 154)", borderRadius: "20px", border: "none" }}>
+                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(156, 194, 154)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Groceries</a>
@@ -85,7 +85,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(91, 110, 198)", borderRadius: "20px", border: "none" }}>
+                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(91, 110, 198)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Cannabis</a>
@@ -96,7 +96,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(210, 157, 147)", borderRadius: "20px", border: "none" }}>
+                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(210, 157, 147)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Restaurants</a>
@@ -107,7 +107,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(159, 205, 251)", borderRadius: "20px", border: "none" }}>
+                            <div class="card text-center m-1 py-5" style={{ backgroundColor: "rgb(159, 205, 251)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">McPoulet</a>
