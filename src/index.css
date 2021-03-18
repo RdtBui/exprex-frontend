@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
+.bg-dark {
+  background: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background: #10caca !important;
+}
+
 .title {
   padding: 0 40px;
   font-family: "gilroy", sans-serif;
