@@ -180,18 +180,26 @@ html {
 body {
   margin: 0;
 }
-.wave-container {
-  background: #ffff;
+
+.first-wave-top {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
 }
-.wave-container > svg {
-  display: block;
+
+.second-wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 2;
 }
 
 a, u {
   text-decoration: none !important;
 }
-
-
 
 /************************** Animations ************************/
 
