@@ -14,7 +14,7 @@ var particleCount = 40,
     particleSizeMultiplier = 0.5,
     flareSizeBase = 100,
     flareSizeMultiplier = 100,
-    lineWidth = 1,
+    lineWidth = 5,
     linkChance = 75, // chance per frame of link, higher = smaller chance
     linkLengthMin = 5, // min linked vertices
     linkLengthMax = 7, // max linked vertices
@@ -34,7 +34,7 @@ var particleCount = 40,
     orbitTilt = true,
     randomMotion = true,
     noiseLength = 1000,
-    noiseStrength = 1;
+    noiseStrength = 0;
 
 var canvas = document.getElementById('stars'),
     //orbits = document.getElementById('orbits'),
@@ -295,10 +295,30 @@ Particle.prototype.render = function () {
 
     context.fillStyle = this.color;
     context.globalAlpha = o;
+    /* Original drawing */
+    // context.beginPath();
+    // context.arc(pos.x, pos.y, r, 0, 2 * Math.PI, false);
+    // context.fill();
+    // context.closePath();
+
+    //Circle
     context.beginPath();
-    context.arc(pos.x, pos.y, r, 0, 2 * Math.PI, false);
-    context.fill();
+    context.lineWidth = 10;
+    context.strokeStyle = 'red';
+    context.arc(pos.x, pos.y, 10, 0, 2 * Math.PI);
+    context.stroke();
+
+    // the triangle
+    context.beginPath();
+    context.moveTo(pos.x - 12, pos.y + 8);
+    context.lineTo(pos.x, pos.y + 25);
+    context.lineTo(pos.x + 12, pos.y + 8);
     context.closePath();
+
+    // the outline
+    context.lineWidth = 1;
+    context.stroke();
+    context.fill();
 
     if (renderParticleGlare) {
         context.globalAlpha = o * glareOpacityMultiplier;
