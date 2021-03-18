@@ -5,7 +5,30 @@ import M2 from '../assets/miniature-ecommerce.png'
 import M3 from '../assets/miniature-restaurants.png'
 import M4 from '../assets/miniature-retail-and-luxury.png'
 
+import React, { useEffect, useState } from 'react'
+
 const Home = () => {
+
+    const [animation, setAnimation] = useState('')
+
+    const navRef = React.useRef()
+    navRef.current = animation
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 900
+            if (show) {
+                setAnimation('bounce-in-top')
+            } else {
+                setAnimation('')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
         <div class="col no-gutters position-relative" style={{ padding: '0' }}>
             {/* Section 1 */}
@@ -74,7 +97,7 @@ const Home = () => {
                 <div class="section3 d-flex justify-content-center align-items-center px-5">
                     <div class="row p-5">
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5 bounce-in-top" style={{ backgroundColor: "rgb(156, 194, 154)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
+                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`} style={{ backgroundColor: "rgb(156, 194, 154)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Groceries</a>
@@ -85,7 +108,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5 bounce-in-top" style={{ backgroundColor: "rgb(91, 110, 198)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
+                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`} style={{ backgroundColor: "rgb(91, 110, 198)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Cannabis</a>
@@ -96,7 +119,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5 bounce-in-top" style={{ backgroundColor: "rgb(210, 157, 147)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
+                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`} style={{ backgroundColor: "rgb(210, 157, 147)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">Restaurants</a>
@@ -107,7 +130,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card text-center m-1 py-5 bounce-in-top" style={{ backgroundColor: "rgb(159, 205, 251)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
+                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`} style={{ backgroundColor: "rgb(159, 205, 251)", borderRadius: "20px", border: "none", boxShadow: "0 14px 30px #888888" }}>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="#" class="title">McPoulet</a>
