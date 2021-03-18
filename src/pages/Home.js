@@ -4,6 +4,8 @@ import M1 from '../assets/miniature-cardshpuk.png'
 import M2 from '../assets/miniature-ecommerce.png'
 import M3 from '../assets/miniature-restaurants.png'
 import M4 from '../assets/miniature-retail-and-luxury.png'
+import '../components/DrifterStarBg.js' // If drifter star animation doesn't work, remove this line, save, restore this line, save
+// TODO: find a way to load html page first before important or null context error 
 
 import React, { useEffect, useState } from 'react'
 
@@ -28,6 +30,19 @@ const Home = () => {
             document.removeEventListener('scroll', handleScroll)
         }
     }, [])
+
+    useEffect(() => {
+        const script = document.createElement('script');
+
+        script.src = '../components/DrifterStarBg.js'
+        script.async = true;
+        document.body.appendChild(script)
+
+        return () => {
+            document.body.removeChild(script)
+        }
+    }, [])
+
 
     return (
         <div class="col no-gutters position-relative" style={{ padding: '0' }}>
@@ -158,7 +173,8 @@ const Home = () => {
             </div>
             <div class="flex-row no-gutters">
                 <div class="section5 d-flex justify-content-center align-items-center">
-                    Section 5
+                    <canvas id="stars" width="300" height="300"></canvas>
+
                 </div>
             </div>
 
