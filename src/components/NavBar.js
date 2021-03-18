@@ -48,7 +48,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <nav class="navbar navbar-expand-lg navbar-dark" className={classes[navRef.current]} style={{ width: "100%" }}>
+        <nav className={`${classes[navRef.current]} navbar navbar-expand-lg navbar-dark`} style={{ width: "100%" }}>
             <a class="navbar-brand ml-5" href="/"><img alt="Logo" src={Logo} width="110" height="110" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
