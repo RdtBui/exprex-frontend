@@ -32,22 +32,6 @@ const Home = () => {
         }
     }, [])
 
-    useEffect(() => {
-        const script = document.createElement('script');
-
-        // script.src = '../components/DrifterStarBg'
-        script.async = true;
-
-        console.log("@@@@@@@@@@@@@@@@")
-        console.log(script.src)
-
-        document.body.appendChild(script)
-
-        return () => {
-            document.body.removeChild(script)
-        }
-    }, [])
-
     return (
         <div class="col no-gutters position-relative" style={{ padding: '0' }}>
 
@@ -63,14 +47,14 @@ const Home = () => {
                             <Typewriter
                                 options={{ autoStart: true, loop: true }}
                                 onInit={(typewriter) => {
-                                    typewriter.typeString('<span style="color: #FF0000;">Fuck</span> <strong> you</strong> big boi')
+                                    typewriter.typeString('<span style="color: #FF0000;">We</span> <strong> deliver</strong>')
                                         .callFunction(() => {
                                             console.log('String typed out!');
                                         })
                                         .pauseFor(1500)
                                         .deleteAll()
                                         .pauseFor(1500)
-                                        .typeString('Just kidding')
+                                        .typeString('Hassle free')
                                         .deleteAll()
                                         .start();
                                 }} />
@@ -118,7 +102,7 @@ const Home = () => {
                                         <span>Start delivering happiness to all your clients, on-demand</span>
                                     </p>
                                 </div>
-                                <a class="btn" href="#" style={{ backgroundColor: "rgb(82, 166, 251)" }}>Contact Hitler</a>
+                                <a class="btn" href="#" style={{ backgroundColor: "rgb(82, 166, 251)" }}>Contact Me</a>
                             </div>
                         </div>
                     </div>
