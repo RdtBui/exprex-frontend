@@ -49,7 +49,11 @@ const NavBar = () => {
 
     return (
         <nav className={`${classes[navRef.current]} navbar navbar-expand-lg navbar-dark`} style={{ width: "100%" }}>
-            <a class="navbar-brand ml-5" href="/"><img alt="Logo" src={Logo} width="110" height="110" /></a>
+            <a class="navbar-brand ml-5" href="/">
+                {/* Brand Logo */}
+                {/* <img alt="Logo" src={Logo} width="110" height="110" /> */}
+                <h1>EXPR<span style={{ color: "skyblue" }}>EX</span></h1>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,10 +66,11 @@ const NavBar = () => {
                             Business solutions
                         </a>
                         <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Take a shit</a>
-                            <a class="dropdown-item" href="#">Take a dump</a>
+                            <a class="dropdown-item" href="#">Groceries</a>
+                            <a class="dropdown-item" href="#">Pharmacy</a>
+                            <a class="dropdown-item" href="#">Restaurants</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Drop a deuce</a>
+                            <a class="dropdown-item" href="#">Requests</a>
                         </div>
                     </li>
                     <li class="nav-item">
