@@ -112,11 +112,10 @@ const Home = () => {
                 </div>
                 {/* style={{ marginTop: "-38vh" }} */}
                 {/* Scrolling text */}
-                <h1>Our trusted partners</h1>
-
-                <div style={{ height: "160px" }}>
+                <h1 className="d-flex justify-content-center">We partner with 17 of your local favorites</h1>
+                <div style={{ height: "100px" }}>
                     <div class="demo-1">
-                        <h3>Lorem ipsum...</h3>
+                        <h3 style={{ whiteSpace: "nowrap" }}>IGA    NUVO     ETCC   TEXT WITH LOGO</h3>
                     </div>
                 </div>
 
