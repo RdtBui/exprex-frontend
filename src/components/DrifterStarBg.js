@@ -5,7 +5,7 @@
  */
 
 // Settings
-var particleCount = 40,
+var particleCount = 60,
     flareCount = 10,
     motion = 0.05,
     tilt = 0.05,
@@ -304,7 +304,7 @@ Particle.prototype.render = function () {
     //Circle
     context.beginPath();
     context.lineWidth = 10;
-    context.strokeStyle = 'red';
+    context.strokeStyle = '#ff6961';
     context.arc(pos.x, pos.y, 10, 0, 2 * Math.PI);
     context.stroke();
 

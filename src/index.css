@@ -95,10 +95,13 @@ h1, h2, h3, h4, h5, h6 {
   background: rgb(91, 110, 198);
 }
 
+/* Background for drifter stars */
 .section5 {
   background-color: rgb(156, 194, 154);
-	background: radial-gradient(ellipse at center, rgba(156,194,154,1) 0%, rgba(40,11,41,1) 100%);
+	background: radial-gradient(ellipse at center, #aec6cf 0%, #7ea4b3 100%);
 }
+
+/* rgba(156,194,154,1) */
 
 .cta-blocks {
   display: flex;

@@ -1,9 +1,12 @@
+import Typewriter from 'typewriter-effect'
+
 import Restaurants from '../assets/visuel-header-restaurants.png'
 import RightArrowIcon from '../assets/icon-arrow-right.svg'
 import M1 from '../assets/miniature-cardshpuk.png'
 import M2 from '../assets/miniature-ecommerce.png'
 import M3 from '../assets/miniature-restaurants.png'
 import M4 from '../assets/miniature-retail-and-luxury.png'
+import MontrealMap from '../assets/montreal-map.svg'
 import '../components/DrifterStarBg.js' // If drifter star animation doesn't work, remove this line, save, restore this line, save
 // TODO: find a way to load html page first before important or null context error 
 
@@ -52,7 +55,19 @@ const Home = () => {
                     <span class="bg section1"></span>
                     <div class="container large d-flex justify-content-between align-items-center flex-row-reverse">
                         <div class="wrapper-text" >
+                            {/* <h1>We deliver...<span>typewriter effect here</span></h1> */}
                             <h1>We deliver...<span>typewriter effect here</span></h1>
+                            <Typewriter
+                                options={{ autoStart: true, loop: true }}
+                                onInit={(typewriter) => {
+                                    typewriter.typeString('<span style="color: #FF0000;">Fuck</span> <strong> you</strong> big boi')
+                                        .callFunction(() => {
+                                            console.log('String typed out!');
+                                        })
+                                        .pauseFor(2500)
+                                        .deleteAll()
+                                        .start();
+                                }} />
                             <p>Power your x with on-demand deliveries</p>
                             <a class="btn large" style={{ backgroundColor: "rgb(82, 166, 251)" }}>
                                 <span>Get started </span>
@@ -177,6 +192,7 @@ const Home = () => {
 
                 </div>
             </div>
+            <img alt="caca" src={MontrealMap} width='100%' />
 
         </div >
     )

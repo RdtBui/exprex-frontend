@@ -34,7 +34,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 310
+            const show = window.scrollY > 1
             if (show) {
                 setNavBackground('appBarSolid')
             } else {
