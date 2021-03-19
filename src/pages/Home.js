@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react'
+
 import Typewriter from 'typewriter-effect'
 
 import Restaurants from '../assets/visuel-header-restaurants.png'
@@ -7,10 +9,6 @@ import M2 from '../assets/miniature-ecommerce.png'
 import M3 from '../assets/miniature-restaurants.png'
 import M4 from '../assets/miniature-retail-and-luxury.png'
 import MontrealMap from '../assets/montreal-map.svg'
-import '../components/DrifterStarBg.js' // If drifter star animation doesn't work, remove this line, save, restore this line, save
-// TODO: find a way to load html page first before important or null context error 
-
-import React, { useEffect, useState } from 'react'
 
 const Home = () => {
 
@@ -37,8 +35,12 @@ const Home = () => {
     useEffect(() => {
         const script = document.createElement('script');
 
-        script.src = '../components/DrifterStarBg.js'
+        // script.src = '../components/DrifterStarBg'
         script.async = true;
+
+        console.log("@@@@@@@@@@@@@@@@")
+        console.log(script.src)
+
         document.body.appendChild(script)
 
         return () => {
@@ -46,9 +48,9 @@ const Home = () => {
         }
     }, [])
 
-
     return (
         <div class="col no-gutters position-relative" style={{ padding: '0' }}>
+
             {/* Section 1 */}
             <div class="flex-row flex-col no-gutters">
                 <section class="d-flex align-items-center overflow-hidden" style={{ padding: "50px 0", zIndex: "1", minHeight: "calc(100vh - 40px)" }}>
@@ -139,7 +141,7 @@ const Home = () => {
                                     <h5 class="card-title">
                                         <a href="#" class="title">Groceries</a>
                                     </h5>
-                                    <img alt="caca" src={M1} width='100%' />
+                                    <img src={M1} width='100%' />
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
@@ -150,7 +152,7 @@ const Home = () => {
                                     <h5 class="card-title">
                                         <a href="#" class="title">Cannabis</a>
                                     </h5>
-                                    <img alt="caca" src={M2} width='100%' />
+                                    <img src={M2} width='100%' />
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
@@ -161,7 +163,7 @@ const Home = () => {
                                     <h5 class="card-title">
                                         <a href="#" class="title">Restaurants</a>
                                     </h5>
-                                    <img alt="caca" src={M3} width='100%' />
+                                    <img src={M3} width='100%' />
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
@@ -172,7 +174,7 @@ const Home = () => {
                                     <h5 class="card-title">
                                         <a href="#" class="title">McPoulet</a>
                                     </h5>
-                                    <img alt="caca" src={M4} width='100%' />
+                                    <img src={M4} width='100%' />
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                             </div>
@@ -193,11 +195,9 @@ const Home = () => {
             <div class="flex-row no-gutters">
                 <div class="section5 d-flex justify-content-center align-items-center">
                     <canvas id="stars" width="300" height="300"></canvas>
-
                 </div>
             </div>
-            <img alt="caca" src={MontrealMap} width='100%' />
-
+            <img alt="Montreal map" src={MontrealMap} width='100%' />
         </div >
     )
 }
