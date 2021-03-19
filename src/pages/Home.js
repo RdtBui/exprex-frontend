@@ -57,6 +57,7 @@ const Home = () => {
                         <div class="wrapper-text" >
                             {/* <h1>We deliver...<span>typewriter effect here</span></h1> */}
                             <h1>We deliver...<span>typewriter effect here</span></h1>
+                            {/* Typewriter-effect library used from github.com/tameemsafi/typewriterjs#readme */}
                             <Typewriter
                                 options={{ autoStart: true, loop: true }}
                                 onInit={(typewriter) => {
@@ -64,7 +65,10 @@ const Home = () => {
                                         .callFunction(() => {
                                             console.log('String typed out!');
                                         })
-                                        .pauseFor(2500)
+                                        .pauseFor(1500)
+                                        .deleteAll()
+                                        .pauseFor(1500)
+                                        .typeString('Just kidding')
                                         .deleteAll()
                                         .start();
                                 }} />
