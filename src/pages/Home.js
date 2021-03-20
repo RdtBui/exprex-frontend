@@ -41,7 +41,7 @@ const Home = () => {
                     <span className="bg section1"></span>
                     <div className="container large d-flex justify-content-between align-items-center flex-row-reverse">
                         <div className="wrapper-text" >
-                            <h1>We deliver
+                            <h1 className="text-white">We deliver
                                 <span>
                                     {/* Typewriter-effect library used from github.com/tameemsafi/typewriterjs#readme */}
                                     <Typewriter
@@ -62,7 +62,6 @@ const Home = () => {
                                         }} />
                                 </span>
                             </h1>
-
                             <p>Power your x with on-demand deliveries</p>
                             <a className="btn large" style={{ backgroundColor: "rgb(82, 166, 251)" }}>
                                 <span>Get started </span>
@@ -134,7 +133,7 @@ const Home = () => {
             {/* Section 3 */}
             <div className="flex-row no-gutters">
                 <div className="section3 d-flex justify-content-center align-items-center px-5">
-                    <h1 className="mx-5 text-white">Exprex delivers every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />for you</h1>
+                    <h1 className="mx-5 text-white">We deliver every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />for you</h1>
                     <div className="row p-5">
                         <div className="col-sm-3">
                             <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
