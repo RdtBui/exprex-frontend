@@ -34,7 +34,6 @@ const Home = () => {
 
     return (
         <div className="col no-gutters position-relative" style={{ padding: '0' }}>
-
             {/* Section 1 */}
             <div className="flex-row flex-col no-gutters">
                 <section className="d-flex align-items-center overflow-hidden" style={{ padding: "50px 0", zIndex: "3", minHeight: "calc(100vh - 40px)" }}>
@@ -132,7 +131,7 @@ const Home = () => {
             {/* Section 3 */}
             <div className="flex-row no-gutters">
                 <div className="section3 d-flex justify-content-center align-items-center px-5">
-                    <h1 className="mx-5 text-white">We <span style={{ color: "#FF9E79", fontSize: "4rem" }}>deliver</span><br /> every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />to your doorstep</h1>
+                    <h1 className="mx-5 text-white">Have us<br /><span style={{ color: "#FF9E79", fontSize: "4rem" }}>deliver</span><br /> to your doorstep</h1>
                     <div className="row p-5">
                         <div className="col-sm-3">
                             {/* Consider adding slight transparent bg to card images */}
@@ -196,6 +195,13 @@ const Home = () => {
                         <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "#FF9E79", fontSize: "4rem" }}>Montreal</span></h1>
                         <br />
                         <div className="example2" style={{ color: "#312355" }}>
+                            <h2>IGA</h2>
+                            <br />
+                            <h2>Rachelle Berry</h2>
+                            <br />
+                            <h2>Marche Nuvo</h2>
+                        </div>
+                        <div className="xxx">
                             <h2>IGA</h2>
                             <br />
                             <h2>Rachelle Berry</h2>
