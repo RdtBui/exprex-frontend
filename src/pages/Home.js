@@ -194,18 +194,9 @@ const Home = () => {
                     <div className="flex-col px-5 text-white">
                         <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "#FF9E79", fontSize: "4rem" }}>Montreal</span></h1>
                         <br />
-                        <div className="example2" style={{ color: "#312355" }}>
-                            <h2>IGA</h2>
-                            <br />
-                            <h2>Rachelle Berry</h2>
-                            <br />
-                            <h2>Marche Nuvo</h2>
-                        </div>
-                        <div className="xxx">
-                            <h2>IGA</h2>
-                            <br />
-                            <h2>Rachelle Berry</h2>
-                            <br />
+                        <div className="slide-text-animation" style={{ color: "#312355" }}>
+                            <h2>IGA</h2><br />
+                            <h2>Rachelle Berry</h2><br />
                             <h2>Marche Nuvo</h2>
                         </div>
                     </div>
