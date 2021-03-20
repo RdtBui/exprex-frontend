@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
+a {
+  font-size: 1rem;
+  color: white !important;
+}
+
 .title {
   padding: 0 40px;
   font-family: "gilroy", sans-serif;
@@ -39,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   padding: 14px 30px !important;
   font-family: "gilroy", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-radius: 100px !important;
   white-space: nowrap;
   color: white !important;
