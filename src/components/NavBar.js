@@ -49,38 +49,38 @@ const NavBar = () => {
 
     return (
         <nav className={`${classes[navRef.current]} navbar navbar-expand-lg navbar-dark`} style={{ width: "100%" }}>
-            <a class="navbar-brand ml-5" href="/">
+            <a className="navbar-brand ml-5 align-middle" href="/">
                 {/* Brand Logo */}
                 {/* <img alt="Logo" src={Logo} width="110" height="110" /> */}
-                <h1>EXPR<span style={{ color: "skyblue" }}>EX</span></h1>
+                <h1 style={{ marginBottom: "0" }}>EXPR<span style={{ color: "skyblue" }}>EX</span></h1>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="mr-auto"></div>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="mr-auto"></div>
+                <ul className="navbar-nav">
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Business solutions
                         </a>
-                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Groceries</a>
-                            <a class="dropdown-item" href="#">Pharmacy</a>
-                            <a class="dropdown-item" href="#">Restaurants</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Requests</a>
+                        <div className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#">Groceries</a>
+                            <a className="dropdown-item" href="#">Pharmacy</a>
+                            <a className="dropdown-item" href="#">Restaurants</a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="#">Requests</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about-us">About Us</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/about-us">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/become-courier">Become a courier</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/become-courier">Become a courier</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn" href="/contact-us" style={{ backgroundColor: "#105285" }}>Get in touch</a>
+                    <li className="nav-item">
+                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "#105285" }}>Get in touch</a>
                     </li>
                 </ul>
             </div>
