@@ -92,7 +92,6 @@ const Home = () => {
                                 <div className="lines">
                                     <div className="line"></div>
                                     <div className="line"></div>
-                                    <div className="line"></div>
                                 </div>
                             </div>
                             <div className="cta-block text-center">

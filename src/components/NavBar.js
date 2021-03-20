@@ -80,7 +80,7 @@ const NavBar = () => {
                         <a className="nav-link" href="/become-courier">Become a courier</a>
                     </li>
                     <li className="nav-item ml-4">
-                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "#105285" }}>Get in touch</a>
+                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "skyblue" }}>Get in touch</a>
                     </li>
                 </ul>
             </div>
