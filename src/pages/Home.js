@@ -134,6 +134,7 @@ const Home = () => {
             {/* Section 3 */}
             <div className="flex-row no-gutters">
                 <div className="section3 d-flex justify-content-center align-items-center px-5">
+                    <h1 className="mx-5 text-white">Exprex delivers every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />for you</h1>
                     <div className="row p-5">
                         <div className="col-sm-3">
                             <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
