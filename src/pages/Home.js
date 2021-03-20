@@ -41,23 +41,28 @@ const Home = () => {
                     <span className="bg section1"></span>
                     <div className="container large d-flex justify-content-between align-items-center flex-row-reverse">
                         <div className="wrapper-text" >
-                            {/* <h1>We deliver...<span>typewriter effect here</span></h1> */}
-                            <h1>We deliver...<span>typewriter effect here</span></h1>
-                            {/* Typewriter-effect library used from github.com/tameemsafi/typewriterjs#readme */}
-                            <Typewriter
-                                options={{ autoStart: true, loop: true }}
-                                onInit={(typewriter) => {
-                                    typewriter.typeString('<span style="color: #FF0000;">We</span> <strong> deliver</strong>')
-                                        .callFunction(() => {
-                                            console.log('String typed out!');
-                                        })
-                                        .pauseFor(1500)
-                                        .deleteAll()
-                                        .pauseFor(1500)
-                                        .typeString('Hassle free')
-                                        .deleteAll()
-                                        .start();
-                                }} />
+                            <h1>We deliver
+                                <span>
+                                    {/* Typewriter-effect library used from github.com/tameemsafi/typewriterjs#readme */}
+                                    <Typewriter
+                                        options={{ autoStart: true, loop: true }}
+                                        onInit={(typewriter) => {
+                                            typewriter.typeString('<span style="color: #FF0000;">chicken bbq</span>')
+                                                .callFunction(() => {
+                                                    console.log('String typed out!');
+                                                })
+                                                .pauseFor(1500)
+                                                .deleteAll()
+                                                .pauseFor(1500)
+                                                .typeString('<span style="color: purple;">heineken</span>')
+                                                .pauseFor(1500)
+                                                .deleteAll()
+                                                .pauseFor(1500)
+                                                .start();
+                                        }} />
+                                </span>
+                            </h1>
+
                             <p>Power your x with on-demand deliveries</p>
                             <a className="btn large" style={{ backgroundColor: "rgb(82, 166, 251)" }}>
                                 <span>Get started </span>

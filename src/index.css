@@ -25,7 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   font-size: 1rem;
-  color: white !important;
+  
+}
+
+a:hover {
+  color: rgba(0,0,0,0.2) !important;
 }
 
 .title {

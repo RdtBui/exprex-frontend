@@ -52,7 +52,7 @@ const NavBar = () => {
             <a className="navbar-brand" href="/">
                 {/* Brand Logo */}
                 {/* <img alt="Logo" src={Logo} width="110" height="110" /> */}
-                <h1 className="mb-0">EXPR<span style={{ color: "skyblue" }}>EX</span></h1>
+                <h1 className="mb-0">EXPR<span style={{ color: "#add8e6" }}>EX</span></h1>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -61,8 +61,8 @@ const NavBar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <div className="mr-auto"></div>
                 <ul className="navbar-nav">
-                    <li className="nav-item dropdown mt-1 ml-2">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li className="nav-item dropdown mt-2 ml-2">
+                        <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Business solutions
                         </a>
                         <div className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
@@ -73,14 +73,14 @@ const NavBar = () => {
                             <a className="dropdown-item" href="#">Requests</a>
                         </div>
                     </li>
-                    <li className="nav-item mt-1 ml-2">
-                        <a className="nav-link" href="/about-us">About Us</a>
+                    <li className="nav-item mt-2 ml-2">
+                        <a className="nav-link text-white" href="/about-us">About Us</a>
                     </li>
-                    <li className="nav-item mt-1 ml-2">
-                        <a className="nav-link" href="/become-courier">Become a courier</a>
+                    <li className="nav-item mt-2 ml-2">
+                        <a className="nav-link text-white" href="/become-courier">Become a courier</a>
                     </li>
                     <li className="nav-item ml-4">
-                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "skyblue" }}>Get in touch</a>
+                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "#add8e6" }}>Get in touch</a>
                     </li>
                 </ul>
             </div>
