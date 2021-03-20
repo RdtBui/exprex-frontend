@@ -113,14 +113,13 @@ const Home = () => {
 
                     </div>
                 </div>
-                {/* style={{ marginTop: "-38vh" }} */}
-                {/* Scrolling text */}
+                {/* Scrolling text
                 <h1 className="d-flex justify-content-center">We partner with 17 of your local favorites</h1>
                 <div style={{ height: "100px" }}>
                     <div class="demo-1">
                         <h3 style={{ whiteSpace: "nowrap" }}>IGA    NUVO     ETCC   TEXT WITH LOGO</h3>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 
@@ -133,9 +132,10 @@ const Home = () => {
             {/* Section 3 */}
             <div className="flex-row no-gutters">
                 <div className="section3 d-flex justify-content-center align-items-center px-5">
-                    <h1 className="mx-5 text-white">We deliver every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />for you</h1>
+                    <h1 className="mx-5 text-white">We <span style={{ color: "#FF9E79", fontSize: "4rem" }}>deliver</span><br /> every <span style={{ color: "#FF9E79", fontSize: "4rem" }}>needs</span><br />to your doorstep</h1>
                     <div className="row p-5">
                         <div className="col-sm-3">
+                            {/* Consider adding slight transparent bg to card images */}
                             <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
                                 <div className="card-body">
                                     <img src={M1} width='100%' />
@@ -190,11 +190,19 @@ const Home = () => {
 
             {/* TODO: Add more content for section 4 according to product owner's needs */}
             <div className="flex-row no-gutters">
-                <div className="section4 d-flex justify-content-center align-items-center">
-                    Section 4
+                <div className="section4 d-flex justify-content-start align-items-center">
+                    <img alt="Montreal map" src={MontrealMap} style={{ height: "100%" }} />
+                    <div className="flex-col px-5 text-white">
+                        <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses</h1>
+                        <br />
+                        <div style={{ color: "#312355" }}>
+                            <h1>IGA</h1>
+                            <h1>Rachelle Berry</h1>
+                            <h1>Marche Nuvo</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img alt="Montreal map" src={MontrealMap} style={{ width: "100%" }} />
         </div >
     )
 }
