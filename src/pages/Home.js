@@ -190,7 +190,7 @@ const Home = () => {
                     Section 4
                 </div>
             </div>
-            <img alt="Montreal map" src={MontrealMap} />
+            <img alt="Montreal map" src={MontrealMap} style={{ width: "100%" }} />
         </div >
     )
 }

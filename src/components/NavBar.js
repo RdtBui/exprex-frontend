@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     appBarTransparent: {
-        backgroundColor: 'rgba(67, 129, 168, 0.5)'
+        backgroundColor: 'rgba(67, 129, 168, 0.2)'
     },
     appBarSolid: {
         backgroundColor: 'rgba(67, 129, 168)'
