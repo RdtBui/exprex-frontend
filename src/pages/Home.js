@@ -193,12 +193,14 @@ const Home = () => {
                 <div className="section4 d-flex justify-content-start align-items-center">
                     <img alt="Montreal map" src={MontrealMap} style={{ height: "100%" }} />
                     <div className="flex-col px-5 text-white">
-                        <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses</h1>
+                        <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "#FF9E79", fontSize: "4rem" }}>Montreal</span></h1>
                         <br />
-                        <div style={{ color: "#312355" }}>
-                            <h1>IGA</h1>
-                            <h1>Rachelle Berry</h1>
-                            <h1>Marche Nuvo</h1>
+                        <div className="example2" style={{ color: "#312355" }}>
+                            <h2>IGA</h2>
+                            <br />
+                            <h2>Rachelle Berry</h2>
+                            <br />
+                            <h2>Marche Nuvo</h2>
                         </div>
                     </div>
                 </div>
