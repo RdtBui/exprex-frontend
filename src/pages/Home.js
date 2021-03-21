@@ -12,18 +12,37 @@ import MontrealMap from '../assets/montreal-map.svg'
 
 const Home = () => {
 
-    const [animation, setAnimation] = useState('')
+    const [bounceAnimation, setBounceAnimation] = useState('')
+    const [slideAnimation, setSlideAnimation] = useState('')
 
-    const navRef = React.useRef()
-    navRef.current = animation
+    const navRefBounceAnimation = React.useRef()
+    navRefBounceAnimation.current = bounceAnimation
+
+    const navRefSlideAnimation = React.useRef()
+    navRefSlideAnimation.current = slideAnimation
 
     useEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > 900
             if (show) {
-                setAnimation('bounce-in-top')
+                setBounceAnimation('bounce-in-top')
             } else {
-                setAnimation('')
+                setBounceAnimation('')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 2620
+            if (show) {
+                setSlideAnimation('slide-text-animation')
+            } else {
+                setSlideAnimation('')
             }
         }
         document.addEventListener('scroll', handleScroll)
@@ -135,7 +154,7 @@ const Home = () => {
                     <div className="row p-5">
                         <div className="col-sm-3">
                             {/* Consider adding slight transparent bg to card images */}
-                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
+                            <div className={`card text-center m-1 py-5 ${[navRefBounceAnimation.current]}`}>
                                 <div className="card-body">
                                     <img src={M1} width='100%' />
                                     <h5 className="card-title">
@@ -146,7 +165,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
+                            <div className={`card text-center m-1 py-5 ${[navRefBounceAnimation.current]}`}>
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         <img src={M2} width='100%' />
@@ -157,7 +176,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`}>
+                            <div className={`card text-center m-1 py-5 ${[navRefBounceAnimation.current]}`}>
                                 <div className="card-body">
                                     <img src={M3} width='100%' />
                                     <h5 className="card-title">
@@ -168,7 +187,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <div className={`card text-center m-1 py-5 ${[navRef.current]}`} >
+                            <div className={`card text-center m-1 py-5 ${[navRefBounceAnimation.current]}`} >
                                 <div className="card-body">
                                     <img src={M4} width='100%' />
                                     <h5 className="card-title">
@@ -194,7 +213,7 @@ const Home = () => {
                     <div className="flex-col px-5 text-white">
                         <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "#FF9E79", fontSize: "4rem" }}>Montreal</span></h1>
                         <br />
-                        <div className="slide-text-animation" style={{ color: "#312355" }}>
+                        <div className={`${[navRefSlideAnimation.current]}`} style={{ color: "#312355" }}>
                             <h2>IGA</h2><br />
                             <h2>Rachelle Berry</h2><br />
                             <h2>Marche Nuvo</h2>
