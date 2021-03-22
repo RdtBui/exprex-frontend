@@ -168,7 +168,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         <img src={M2} width='100%' />
-                                        <a href="#" className="title">Cannabis</a>
+                                        <a href="#" className="title">Plunger</a>
                                     </h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
@@ -876,7 +876,6 @@ const Home = () => {
 
                                 <use xlinkHref="#anims" x="730" y="680" />
                                 <circle r="0.3em" cx="730" cy="680" />
-
 
                             </g>
                         </svg>
