@@ -8,7 +8,6 @@ import M1 from '../assets/miniature-cardshpuk.png'
 import M2 from '../assets/miniature-ecommerce.png'
 import M3 from '../assets/miniature-restaurants.png'
 import M4 from '../assets/miniature-retail-and-luxury.png'
-import MontrealMap from '../assets/montreal-map.svg'
 
 const Home = () => {
 
@@ -863,11 +862,15 @@ const Home = () => {
                                     </g>
                                 </defs>
                                 {/* GPS map pin */}
-                                <use xlinkHref="#anims" x="20%" y="20%" />
-                                <circle r="0.3em" cx="50%" cy="50%" />
 
-                                <use xlinkHref="#anims" x="50%" y="50%" />
-                                <circle r="0.3em" cx="50%" cy="50%" />
+                                <use xlinkHref="#anims" x="600" y="650" />
+                                <circle r="0.3em" cx="600" cy="650" />
+
+                                <use xlinkHref="#anims" x="650" y="700" />
+                                <circle r="0.3em" cx="650" cy="700" />
+
+                                <use xlinkHref="#anims" x="600" y="650" />
+                                <circle r="0.3em" cx="600" cy="650" />
                             </g>
                         </svg>
                     </div>
