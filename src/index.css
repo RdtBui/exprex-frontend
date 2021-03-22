@@ -89,6 +89,14 @@ a:hover {
 
 .section1 {
   background: rgb(159, 205, 251);
+
+  background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+  /* background-size: 200%; */
+  transition: .5s ease-out;
+}
+
+.section1:hover {
+  background-position: left;
 }
 
 .section2 {
@@ -102,7 +110,8 @@ a:hover {
 }
 
 .section4 {
-  background: rgb(91, 110, 198);
+  /* rgb(91, 110, 198); */
+  background: salmon;
 }
 
 /* Background for drifter stars */

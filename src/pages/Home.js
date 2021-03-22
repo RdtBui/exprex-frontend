@@ -142,14 +142,14 @@ const Home = () => {
 
             {/* Top wave page separator */}
             <div style={{ position: "relative", left: "0", top: "0" }}>
-                <svg className="wave-container first-wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF9E79" fill-opacity="1" d="M0,0L30,42.7C60,85,120,171,180,197.3C240,224,300,192,360,202.7C420,213,480,267,540,272C600,277,660,235,720,218.7C780,203,840,213,900,218.7C960,224,1020,224,1080,202.7C1140,181,1200,139,1260,149.3C1320,160,1380,224,1410,256L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+                <svg className="wave-container first-wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="salmon" fill-opacity="1" d="M0,0L30,42.7C60,85,120,171,180,197.3C240,224,300,192,360,202.7C420,213,480,267,540,272C600,277,660,235,720,218.7C780,203,840,213,900,218.7C960,224,1020,224,1080,202.7C1140,181,1200,139,1260,149.3C1320,160,1380,224,1410,256L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
                 <svg className="wave-container second-wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFD1A9" fill-opacity="1" d="M0,96L24,133.3C48,171,96,245,144,266.7C192,288,240,256,288,202.7C336,149,384,75,432,85.3C480,96,528,192,576,240C624,288,672,288,720,250.7C768,213,816,139,864,138.7C912,139,960,213,1008,234.7C1056,256,1104,224,1152,181.3C1200,139,1248,85,1296,80C1344,75,1392,117,1416,138.7L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
             </div>
 
             {/* Section 3 */}
             <div className="flex-row no-gutters">
                 <div className="section3 d-flex justify-content-center align-items-center px-5">
-                    <h1 className="mx-5 text-white">Have us<br /><span style={{ color: "#FF9E79", fontSize: "4rem" }}>deliver</span><br /> to your doorstep</h1>
+                    <h1 className="mx-5 text-white">Have us<br /><span style={{ color: "salmon", fontSize: "4rem" }}>deliver</span><br /> to your doorstep</h1>
                     <div className="row p-5">
                         <div className="col-sm-3">
                             {/* Consider adding slight transparent bg to card images */}
@@ -168,7 +168,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         <img src={M2} width='100%' />
-                                        <a href="#" className="title">Cannabis</a>
+                                        <a href="#" className="title">Plunger</a>
                                     </h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
@@ -882,9 +882,9 @@ const Home = () => {
                         </svg>
                     </div>
                     <div className="flex-col px-5 text-white">
-                        <h1>Exprex partners with <span style={{ color: "#FF9E79", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "#FF9E79", fontSize: "4rem" }}>Montreal</span></h1>
+                        <h1>Exprex partners with <span style={{ color: "lightblue", fontSize: "4rem" }}>local</span><br /> businesses in <span style={{ color: "lightblue", fontSize: "4rem" }}>Montreal</span></h1>
                         <br />
-                        <div className={`${[navRefSlideAnimation.current]}`} style={{ color: "#312355" }}>
+                        <div className={`${[navRefSlideAnimation.current]}`} style={{ color: "#FFD1A9" }}>
                             <h2>IGA</h2><br />
                             <h2>Rachelle Berry</h2><br />
                             <h2>Marche Nuvo</h2>
