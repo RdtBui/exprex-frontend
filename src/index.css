@@ -55,6 +55,10 @@ a:hover {
   background: #11a3eb;
 }
 
+.card-background-color {
+  background: rgba(250, 128, 114, 0.8);
+}
+
 .btn.large {
   padding: 14px 48px;
 }
@@ -106,7 +110,7 @@ a:hover {
 
 .section3 {
   /* background: rgb(210, 177, 147); */
-  background: #FFD1A9;
+  background: #FEB281;
 }
 
 .section4 {

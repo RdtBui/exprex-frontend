@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgba(67, 129, 168, 0.2)'
     },
     appBarSolid: {
-        backgroundColor: 'rgba(67, 129, 168)'
+        backgroundColor: '#E7F2F8'
     }
 })
 )
@@ -52,7 +52,7 @@ const NavBar = () => {
             <a className="navbar-brand" href="/">
                 {/* Brand Logo */}
                 {/* <img alt="Logo" src={Logo} width="110" height="110" /> */}
-                <h3 className="mb-0">EXPR<span style={{ color: "#add8e6" }}>EX</span></h3>
+                <h3 className="mb-0">EXPR<span style={{ color: "#167CAC" }}>EX</span></h3>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@ const NavBar = () => {
                         <a className="nav-link text-white" href="/become-courier">Become a courier</a>
                     </li>
                     <li className="nav-item ml-4">
-                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "rgb(137, 207, 240)" }}>Get in touch</a>
+                        <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "#C35046" }}>Get in touch</a>
                     </li>
                 </ul>
             </div>
