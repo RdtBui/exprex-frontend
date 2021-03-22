@@ -494,3 +494,69 @@ a, u {
           animation-delay: 1.6s;
 }
 
+/* Pop ripple svg */
+
+
+circle {
+  fill: #65ff78;
+  opacity: 0.3;
+}
+
+svg > circle:last-child {
+  fill: #35ffc3;
+  opacity: 1;
+}
+
+.rp1 {
+  animation: ripple1 0.7s linear infinite;
+}
+
+@keyframes ripple1 {
+  0% {
+    transform: scale(5.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(8.5);
+    opacity: 0.0;
+  }
+}
+
+.rp2 {
+  animation: ripple2 0.7s linear infinite;
+}
+
+@keyframes ripple2 {
+  0% {
+    transform: scale(3.5);
+  }
+  100% {
+    transform: scale(5.5);
+  }
+}
+
+.rp3 {
+  animation: ripple3 0.7s linear infinite;
+}
+
+@keyframes ripple3 {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(3.5);
+  }
+}
+
+.rp4 {
+  animation: ripple4 0.7s linear infinite;
+}
+
+@keyframes ripple4 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

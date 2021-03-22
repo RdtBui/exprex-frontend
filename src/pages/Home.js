@@ -853,10 +853,25 @@ const Home = () => {
                                     id="path4739"
 
                                     transform="translate(-1647,-427.13782)" />
-                                <circle cx="650" cy="600" r="10" stroke="#FF9E79" stroke-width="5" fill="transparent">
-                                    {/* <animateMotion path="M 0 0 V 300 Z" dur="20s" repeatCount="indefinite" /> */}
-                                </circle>
+                                {/* <circle className="pp" cx="650" cy="600" r="10" stroke="#FF9E79" stroke-width="5" fill="transparent"> */}
+                                {/* <animateMotion path="M 0 0 V 300 Z" dur="20s" repeatCount="indefinite" /> */}
+                                {/* </circle> */}
+                                <defs>
+                                    <g id="anims">
+                                        <circle className="rp1" r="1em" />
+                                        <circle className="rp2" r="1em" />
+                                        <circle className="rp3" r="1em" />
+                                        <circle className="rp4" r="1em" />
+                                    </g>
+                                </defs>
+                                <use xlinkHref="#anims" x="20%" y="20%" />
+                                <circle r="0.5em" cx="50%" cy="50%" />
 
+                                <use xlinkHref="#anims" x="50%" y="50%" />
+                                <circle r="0.5em" cx="50%" cy="50%" />
+
+                                <use xlinkHref="#anims" x="50%" y="50%" />
+                                <circle r="0.5em" cx="50%" cy="50%" />
                             </g>
                         </svg>
                     </div>
