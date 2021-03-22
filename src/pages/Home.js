@@ -862,6 +862,11 @@ const Home = () => {
                                     </g>
                                 </defs>
                                 {/* GPS map pin */}
+                                <use xlinkHref="#anims" x="450" y="750" />
+                                <circle r="0.3em" cx="450" cy="750" />
+
+                                <use xlinkHref="#anims" x="620" y="550" />
+                                <circle r="0.3em" cx="620" cy="550" />
 
                                 <use xlinkHref="#anims" x="600" y="650" />
                                 <circle r="0.3em" cx="600" cy="650" />
@@ -869,8 +874,10 @@ const Home = () => {
                                 <use xlinkHref="#anims" x="650" y="700" />
                                 <circle r="0.3em" cx="650" cy="700" />
 
-                                <use xlinkHref="#anims" x="600" y="650" />
-                                <circle r="0.3em" cx="600" cy="650" />
+                                <use xlinkHref="#anims" x="730" y="680" />
+                                <circle r="0.3em" cx="730" cy="680" />
+
+
                             </g>
                         </svg>
                     </div>
