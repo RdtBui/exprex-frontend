@@ -133,14 +133,6 @@ const Home = () => {
 
                     </div>
                 </div>
-                {/* Scrolling text
-                <h1 className="d-flex justify-content-center">We partner with 17 of your local favorites</h1>
-                <div style={{ height: "100px" }}>
-                    <div class="demo-1">
-                        <h3 style={{ whiteSpace: "nowrap" }}>IGA    NUVO     ETCC   TEXT WITH LOGO</h3>
-                    </div>
-                </div> */}
-
             </div>
 
             {/* Top wave page separator */}
