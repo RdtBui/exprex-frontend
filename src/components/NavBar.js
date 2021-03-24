@@ -21,6 +21,12 @@ const useStyles = makeStyles((theme) => ({
     },
     appBarSolid: {
         backgroundColor: '#E7F2F8'
+    },
+    textWhite: {
+        color: 'white!important'
+    },
+    textGrey: {
+        color: '#9ca2a9!important'
     }
 })
 )
@@ -28,17 +34,26 @@ const useStyles = makeStyles((theme) => ({
 const NavBar = () => {
     const classes = useStyles();
     const [navBackground, setNavBackground] = useState('appBarTransparent')
+    const [navText, setNavText] = useState('textWhite')
 
-    const navRef = React.useRef()
-    navRef.current = navBackground
+    const navRefBackground = React.useRef()
+    navRefBackground.current = navBackground
+
+    const navRefText = React.useRef()
+    navRefText.current = navText
 
     useEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > 1
             if (show) {
                 setNavBackground('appBarSolid')
+                setNavText('textGrey')
+
+
             } else {
                 setNavBackground('appBarTransparent')
+                setNavText('textWhite')
+
             }
         }
         document.addEventListener('scroll', handleScroll)
@@ -48,11 +63,11 @@ const NavBar = () => {
     }, [])
 
     return (
-        <nav className={`${classes[navRef.current]} navbar navbar-expand-lg navbar-dark`} style={{ width: "100%", padding: "14px 60px" }}>
+        <nav className={`${classes[navRefBackground.current]} navbar navbar-expand-lg navbar-dark`} style={{ width: "100%", padding: "14px 60px" }}>
             <a className="navbar-brand" href="/">
                 {/* Brand Logo */}
                 {/* <img alt="Logo" src={Logo} width="110" height="110" /> */}
-                <h3 className="mb-0">EXPR<span style={{ color: "#167CAC" }}>EX</span></h3>
+                <h3 className={`mb-0 ${classes[navRefText.current]}`}>EXPR<span style={{ color: "#167CAC" }}>EX</span></h3>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -62,7 +77,7 @@ const NavBar = () => {
                 <div className="mr-auto"></div>
                 <ul className="navbar-nav">
                     <li className="nav-item dropdown mt-2 ml-2">
-                        <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a className={`nav-link dropdown-toggle ${classes[navRefText.current]}`} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Business solutions
                         </a>
                         <div className="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
@@ -74,10 +89,10 @@ const NavBar = () => {
                         </div>
                     </li>
                     <li className="nav-item mt-2 ml-2">
-                        <a className="nav-link text-white" href="/about-us">About Us</a>
+                        <a className={`nav-link ${classes[navRefText.current]}`} href="/about-us">About Us</a>
                     </li>
                     <li className="nav-item mt-2 ml-2">
-                        <a className="nav-link text-white" href="/become-courier">Become a courier</a>
+                        <a className={`nav-link ${classes[navRefText.current]}`} href="/become-courier">Become a courier</a>
                     </li>
                     <li className="nav-item ml-4">
                         <a className="nav-link btn" href="/contact-us" style={{ backgroundColor: "#C35046" }}>Get in touch</a>
