@@ -59,13 +59,13 @@ const Home = () => {
                     <span className="bg section1"></span>
                     <div className="container large d-flex justify-content-between align-items-center flex-row-reverse">
                         <div className="wrapper-text" >
-                            <h1 className="text-white">We deliver
+                            <h1 className="text-white">Nous livrons
                                 <span>
                                     {/* Typewriter-effect library used from github.com/tameemsafi/typewriterjs#readme */}
                                     <Typewriter
                                         options={{ autoStart: true, loop: true }}
                                         onInit={(typewriter) => {
-                                            typewriter.typeString('<span style="color: #EFE7BC;">chicken bbq</span>')
+                                            typewriter.typeString('<span style="color: #303C6C;">les epiceries</span>')
                                                 .callFunction(() => {
                                                     console.log('String typed out!');
                                                 })
@@ -73,11 +73,11 @@ const Home = () => {
                                                 .deleteAll()
                                                 .pauseFor(1500)
                                                 // Mint: B5E5CF
-                                                .typeString('<span style="color: #a6c8c2;">a brown fox jumps over the lazy dog</span>')
+                                                .typeString('<span style="color: #F4976C;">d&#39la bonne poutine</span>')
                                                 .pauseFor(1500)
                                                 .deleteAll()
                                                 .pauseFor(1500)
-                                                .typeString('<span style="color: lightblue;">lorem ipsum</span>')
+                                                .typeString('<span style="color: #FBE8A6;">les ordonnances et produits de pharmacies</span>')
                                                 .pauseFor(1500)
                                                 .deleteAll()
                                                 .start();

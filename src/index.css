@@ -17,6 +17,52 @@ Body {
   font-family: "proximanova", sans-serif;
 }
 
+/* Color palette #34 */
+
+/* .color1 {
+  color:#10E7DC;
+}
+
+.color2 {
+  color:#0074E1;
+}
+
+.color3 {
+  color:#1B9CE5;
+}
+
+.color4 {
+  color:#6CDAEE;
+}
+
+.color5 {
+  color:#F79E02;
+} */
+
+
+
+/* Color palette #37 */
+.color1 {
+  color:#FBE8A6;
+}
+
+.color2 {
+  color:#F4976C;
+}
+
+.color3 {
+  color:#303C6C;
+}
+
+.color4 {
+  color:#B4DFE5;
+}
+
+.color5 {
+  color:#D2FDFF;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "gilroy", sans-serif;
   font-weight: 700;
@@ -94,7 +140,7 @@ a:hover {
 .section1 {
   background: lightskyblue;
 
-  /* background: linear-gradient(to left, salmon 50%, lightblue 50%) right; */
+  /* background: linear-gradient(to left, #B4DFE5 50%, #D2FDFF 50%) right; */
   /* background-size: 200%; */
   transition: .5s ease-out;
 }
