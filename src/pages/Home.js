@@ -72,7 +72,6 @@ const Home = () => {
                                                 .pauseFor(1500)
                                                 .deleteAll()
                                                 .pauseFor(1500)
-                                                // Mint: B5E5CF
                                                 .typeString('<span style="color: #F4976C;">d&#39la bonne poutine</span>')
                                                 .pauseFor(1500)
                                                 .deleteAll()
