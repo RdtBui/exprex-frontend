@@ -89,7 +89,7 @@ const NavBar = () => {
                         </div>
                     </li>
                     <li className="nav-item mt-2 ml-2">
-                        <a className={`nav-link ${classes[navRefText.current]}`} href="/about-us">About Us</a>
+                        <a className={`nav-link ${classes[navRefText.current]}`} href="/about-us">About us</a>
                     </li>
                     <li className="nav-item mt-2 ml-2">
                         <a className={`nav-link ${classes[navRefText.current]}`} href="/become-courier">Become a courier</a>
