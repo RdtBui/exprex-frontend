@@ -209,7 +209,12 @@ const Home = () => {
                         <img src={MontrealMap} height="100%" />
                     </div>
                     <div className="flex-col px-5 text-white">
-                        <h1>Over  <span style={{ color: "lightblue", fontSize: "4rem" }}>5 million</span><br /> deliveries in <span style={{ color: "lightblue", fontSize: "4rem" }}>Montreal</span></h1>
+                        <h2>Plus que <br /><span style={{ color: "lightblue", fontSize: "3rem" }}>5 millions</span><br />
+                            de livraisons a<span style={{ color: "lightblue", fontSize: "3rem" }}> Montreal</span>.
+                        </h2>
+                        <h2>
+                            Soyez l'un d'eux
+                        </h2>
                         <br />
                         <div className={`${[navRefSlideAnimation.current]}`} style={{ color: "#FFD1A9" }}>
                             <h2>IGA</h2><br />
@@ -217,9 +222,10 @@ const Home = () => {
                             <h2>Marche Nuvo</h2><br />
                             <h2>Delivurr</h2><br />
                             <h2>et encore plus</h2><br />
-                            <a href="#"><span style={{ color: "lightblue", fontSize: "4rem" }}><h1>soyez l'un d'eux</h1></span></a>
-                            <a href="#"><span style={{ color: "white", fontSize: "4rem" }}><h1>Nous livrons bon temps, mauvais temps</h1></span></a>
+                            <br />
                         </div>
+                        <br />
+                        <h2>Nous livrons bon temps, mauvais temps</h2>
                     </div>
                 </div>
             </div>

@@ -773,7 +773,7 @@
                <circle class="rp4" r="0.5em" />
          </g>
       </defs>
-
+      <!-- Map pins in Montreal -->
       <use href="#anims" x="450" y="750" />
       <circle r="0.3em" cx="450" cy="750" />
 
@@ -788,6 +788,37 @@
 
       <use href="#anims" x="730" y="680" />
       <circle r="0.3em" cx="730" cy="680" />
+
+      <use href="#anims" x="750" y="720" />
+      <circle r="0.3em" cx="750" cy="720" />
+
+      <use href="#anims" x="630" y="820" />
+      <circle r="0.3em" cx="630" cy="820" />
+
+      <use href="#anims" x="730" y="480" />
+      <circle r="0.3em" cx="730" cy="480" />
+
+      
+
+      <!-- Map pins in Longueuil -->
+      <use href="#anims" x="910" y="620" />
+      <circle r="0.3em" cx="910" cy="620" />
+
+      <use href="#anims" x="980" y="600" />
+      <circle r="0.3em" cx="980" cy="600" />
+
+      <use href="#anims" x="960" y="720" />
+      <circle r="0.3em" cx="960" cy="720" />
+
+      <!-- Map pins in Laval -->
+      <use href="#anims" x="410" y="570" />
+      <circle r="0.3em" cx="410" cy="570" />
+
+      <use href="#anims" x="550" y="450" />
+      <circle r="0.3em" cx="550" cy="450" />
+
+      <use href="#anims" x="530" y="490" />
+      <circle r="0.3em" cx="530" cy="490" />
   </g>
    
 </svg>
